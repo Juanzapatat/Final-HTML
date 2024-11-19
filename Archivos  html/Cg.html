@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facturación y Control de Gastos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+
+<body class="bg-gradient-to-r from-[#0a0908] to-[#ba5e00] text-white flex">
+
+  <!-- Barra lateral fija -->
+  <div class="w-64 bg-black bg-opacity-70 p-5 flex flex-col items-center fixed top-0 left-0 h-full">
+    <a href="interfaz.html" class="w-full mb-4">
+      <button class="bg-[#ba5e00] text-white font-bold py-4 px-6 w-full rounded transition-all transform hover:bg-[#d8a23e] hover:scale-105 hover:shadow-lg">
+        Regresar
+      </button>
+    </a>
+    <a href="tablacg.html" class="w-full mb-4">
+      <button class="bg-[#ba5e00] text-white font-bold py-4 px-6 w-full rounded transition-all transform hover:bg-[#d8a23e] hover:scale-105 hover:shadow-lg">
+        Revisar Gastos
+      </button>
+    </a>
+    
+    <!-- Imagen debajo de los botones y con tamaño mayor -->
+    <img src="img/logo.png" alt="Logo" class="w-40 h-40 mt-5 rounded-full mb-5 border white">
+  </div>
+
+  <!-- Contenedor principal -->
+  <div class="ml-64 w-full p-10 flex flex-col min-h-screen">
+
+    <!-- Contenedor de bienvenida -->
+    <div class="flex justify-center items-center mb-10">
+      <div class="bg-black/50 p-10 w-full md:w-3/4 rounded-lg">
+        <h1 class="text-5xl font-bold text-[#ba5e00] uppercase text-center mb-4">
+          Bienvenido al área de Control de Gastos
+        </h1>
+        <p class="text-center text-2xl">Por favor diligencie el formulario con los datos solicitados</p>
+      </div>
+    </div>
+
+    <!-- Formulario de control de gastos -->
+    <div class="bg-black bg-opacity-40 mx-auto w-full md:w-3/4 lg:w-1/2 p-10 rounded-xl">
+      <form action="" method="post" class="space-y-6">
+        <div class="grid grid-cols-1 gap-6">
+
+          <!-- Contenedor de inputs alineados centrados -->
+          <div class="flex flex-col items-center space-y-4">
+            <!-- Nombre del gasto -->
+            <label for="nombre-gasto" class="block text-xl text-[#ba5e00] font-bold">Nombre del Gasto</label>
+            <input type="text" name="nombre-gasto" id="nombre-gasto" class="w-full max-w-md p-3 border border-gray-300 rounded-md bg-gray-600 text-white text-center focus:border-[#ba5e00] focus:outline-none">
+
+            <!-- Fecha -->
+            <label for="fecha" class="block text-xl text-[#ba5e00] font-bold">Fecha</label>
+            <input type="date" name="fecha" id="fecha" class="w-full max-w-md p-3 border border-gray-300 rounded-md bg-gray-600 text-white text-center focus:border-[#ba5e00] focus:outline-none">
+
+            <!-- Monto -->
+            <label for="monto" class="block text-xl text-[#ba5e00] font-bold">Monto</label>
+            <input type="number" name="monto" id="monto" class="w-full max-w-md p-3 border border-gray-300 rounded-md bg-gray-600 text-white text-center focus:border-[#ba5e00] focus:outline-none">
+
+            <!-- Receptor -->
+            <label for="receptor" class="block text-xl text-[#ba5e00] font-bold">Receptor</label>
+            <input type="text" name="receptor" id="receptor" class="w-full max-w-md p-3 border border-gray-300 rounded-md bg-gray-600 text-white text-center focus:border-[#ba5e00] focus:outline-none">
+
+            <!-- Categoría -->
+            <label for="categoria" class="block text-xl text-[#ba5e00] font-bold">Categoría</label>
+            <select name="Categoria" id="categoria" class="w-full max-w-md p-3 border border-gray-300 rounded-md bg-gray-600 text-white text-center focus:border-[#ba5e00] focus:outline-none">
+              <option value="textil">Textiles</option>
+              <option value="Compra Activos">Compra Activos</option>
+              <option value="Inversion Banco">Inversión Banco</option>
+              <option value="Uso Personal">Uso Personal</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Botón de guardar centrado -->
+        <div class="flex justify-center mt-6">
+          <button type="submit" class="bg-[#ba5e00] text-white font-bold py-3 px-6 rounded shadow-lg hover:bg-[#FFA500] transition-all transform hover:scale-105 hover:shadow-xl">
+            Guardar
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
