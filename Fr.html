@@ -10,7 +10,8 @@
     <link rel="icon" href="img/Logo.png">
 </head>
 
-<body class="overflow-y-auto font-sans m-0 p-0 bg-gradient-to-r from-[#0a0908] to-[#ba5e00] text-[#f7f7f7] flex flex-col justify-between min-h-screen">
+<body
+    class="overflow-y-auto font-sans m-0 p-0 bg-gradient-to-r from-[#0a0908] to-[#ba5e00] text-[#f7f7f7] flex flex-col justify-between min-h-screen">
 
     <!-- Encabezado -->
     <header class="w-full text-center bg-black bg-opacity-60 py-5">
@@ -20,12 +21,16 @@
     <!-- Contenedor principal con barra lateral y contenido -->
     <div class="container flex flex-col lg:flex-row w-full max-w-screen-xl p-5 mx-auto">
         <!-- Barra lateral -->
-        <nav class="barra_lateral w-full lg:w-[250px] bg-black bg-opacity-60 p-5 flex flex-col items-center mb-5 lg:mb-0">
+        <nav
+            class="barra_lateral w-full lg:w-[250px] bg-black bg-opacity-60 p-5 flex flex-col items-center mb-5 lg:mb-0">
             <a href="interfaz.html" class="w-full mb-2">
-                <button class="bg-[#ba5e00] text-white border-none py-2 px-5 text-lg font-bold rounded transition duration-300 ease-in-out hover:bg-[#d8a23e] w-full">Regresar</button>
+                <button
+                    class="bg-[#ba5e00] text-white border-none py-2 px-5 text-lg font-bold rounded transition duration-300 ease-in-out hover:bg-[#d8a23e] w-full">Regresar</button>
             </a>
             <a href="tablafr.html" class="w-full mb-2">
-                <button class="bg-[#ba5e00] text-white border-none py-2 px-5 text-lg font-bold rounded transition duration-300 ease-in-out hover:bg-[#d8a23e] w-full">Revisar Factura</button>
+                <button
+                    class="bg-[#ba5e00] text-white border-none py-2 px-5 text-lg font-bold rounded transition duration-300 ease-in-out hover:bg-[#d8a23e] w-full">Revisar
+                    Factura</button>
             </a>
             <img src="img/Logo.png" alt="Logo de la empresa" class="imagen-debajo mt-5 max-w-full rounded" width="600">
         </nav>
@@ -34,34 +39,45 @@
         <main class="flex-1 p-5 text-white overflow-auto w-full">
             <div class="bienvenida text-center bg-black bg-opacity-60 p-7 rounded mb-5">
                 <h2 class="text-2xl font-bold text-[#ba5e00]">¡Bienvenido a nuestra área de Reporte de Finanzas!</h2>
-                <p class="text-base">Por favor diligencie el siguiente formulario para así llevar con efectividad su Reporte de Finanzas. Si el reporte es sobre uno ya realizado, solo debe incluir la fecha de expedición. No es necesario llenar el campo "fecha de vencimiento".</p>
+                <p class="text-base">Por favor diligencie el siguiente formulario para así llevar con efectividad su
+                    Reporte de Finanzas. Si el reporte es sobre uno ya realizado, solo debe incluir la fecha de
+                    expedición. No es necesario llenar el campo "fecha de vencimiento".</p>
             </div>
 
             <!-- Formulario -->
-            <form class="formulario flex flex-col gap-6 max-w-[450px] w-full p-5 bg-black bg-opacity-90 rounded mx-auto items-center">
+            <form
+                class="formulario flex flex-col gap-6 max-w-[450px] w-full p-5 bg-black bg-opacity-90 rounded mx-auto items-center">
 
                 <!-- Nombre del Monto -->
                 <label for="nombre" class="text-[#ba5e00] font-bold text-center w-full">Nombre del Reporte:</label>
-                <input type="text" id="nombre" name="nombre" class="w-full p-2 text-sm border border-gray-400 rounded bg-[#333333] text-white text-center focus:border-[#ba5e00] outline-none">
+                <input type="text" id="nombre" name="nombre"
+                    class="w-full p-2 text-sm border border-gray-400 rounded bg-[#333333] text-white text-center focus:border-[#ba5e00] outline-none">
 
                 <!-- Fecha de expedición -->
                 <label for="fecha" class="text-[#ba5e00] font-bold text-center w-full">Fecha de Expedición:</label>
-                <input type="date" id="fecha" name="fecha" class="w-full p-2 text-sm border border-gray-400 rounded bg-[#333333] text-white text-center focus:border-[#ba5e00] outline-none">
+                <input type="date" id="fecha" name="fecha"
+                    class="w-full p-2 text-sm border border-gray-400 rounded bg-[#333333] text-white text-center focus:border-[#ba5e00] outline-none">
 
                 <!-- Fecha de vencimiento -->
-                <label for="fecha_vencimiento" class="text-[#ba5e00] font-bold text-center w-full">Fecha de Vencimiento:</label>
-                <input type="date" id="fecha_vencimiento" name="fecha_vencimiento" class="w-full p-2 text-sm border border-gray-400 rounded bg-[#333333] text-white text-center focus:border-[#ba5e00] outline-none">
+                <label for="fecha_vencimiento" class="text-[#ba5e00] font-bold text-center w-full">Fecha de
+                    Vencimiento:</label>
+                <input type="date" id="fecha_vencimiento" name="fecha_vencimiento"
+                    class="w-full p-2 text-sm border border-gray-400 rounded bg-[#333333] text-white text-center focus:border-[#ba5e00] outline-none">
 
                 <!-- Monto del reporte -->
                 <label for="monto" class="text-[#ba5e00] font-bold text-center w-full">Monto del Reporte:</label>
-                <input type="number" id="monto" name="monto" class="w-full p-2 text-sm border border-gray-400 rounded bg-[#333333] text-white text-center focus:border-[#ba5e00] outline-none">
+                <input type="number" id="monto" name="monto"
+                    class="w-full p-2 text-sm border border-gray-400 rounded bg-[#333333] text-white text-center focus:border-[#ba5e00] outline-none">
 
                 <!-- Categoría -->
                 <label for="categoria" class="text-[#ba5e00] font-bold text-center w-full">Categoría:</label>
-                <input type="text" id="categoria" name="categoria" class="w-full p-2 text-sm border border-gray-400 rounded bg-[#333333] text-white text-center focus:border-[#ba5e00] outline-none">
+                <input type="text" id="categoria" name="categoria"
+                    class="w-full p-2 text-sm border border-gray-400 rounded bg-[#333333] text-white text-center focus:border-[#ba5e00] outline-none">
 
                 <!-- Botón para finalizar el registro -->
-                <button type="submit" class="bg-[#ba5e00] text-white py-2 text-lg font-bold rounded w-full mt-5 transition duration-300 ease-in-out hover:bg-[#d8a23e]">Finalizar Registro</button>
+                <button type="submit"
+                    class="bg-[#ba5e00] text-white py-2 text-lg font-bold rounded w-full mt-5 transition duration-300 ease-in-out hover:bg-[#d8a23e]">Finalizar
+                    Registro</button>
             </form>
         </main>
     </div>
@@ -74,5 +90,3 @@
 </body>
 
 </html>
-
-
